@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.env
+.venv/
+.pytest_cache/
+
+# Sensitive financial data — never commit real profiles
+memory/agents/shared_financial_profile.md

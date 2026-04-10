@@ -1,0 +1,31 @@
+[project]
+name = "greyrock"
+version = "0.1.0"
+description = "Multi-agent wealth management advisory system"
+requires-python = ">=3.12"
+dependencies = [
+    "claude-agent-sdk>=0.1.0",
+    "click>=8.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+greyrock = "greyrock.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["greyrock*"]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = [
+    "integration: marks tests that call the real Claude API",
+]
