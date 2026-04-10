@@ -1,5 +1,7 @@
 # Greyrock Wealth Management
 
+> **What's in a name?** "Greyrock" is meaningless — it's just a playful riff on a well-known asset management firm. This project has no affiliation with any financial institution.
+
 A personal wealth management advisory system powered by a multi-agent AI team. Ask financial questions and get coordinated perspectives from six specialist agents, orchestrated by a Managing Director that synthesizes their responses into a unified roundtable format.
 
 ## How It Works
